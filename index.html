@@ -1,48 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr" data-lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type="png" href="sila.jpg">
-    <title>Sıla Barışık</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#9a9a9a" />
+  <meta name="description" content="Sıla Barışık — kişisel portföy." />
+  <link rel="icon" type="image/png" href="assets/me.png" />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="style.css?v=5" />
+  <title>Sıla Barışık</title>
 </head>
-
-
 <body>
-    
-    <header class="container">
-        <nav>
-            <div class="logo">
-               <a href=""><img src="sila.jpg" alt="Logo" ></a>  
+
+  <!-- macOS-style top menu bar -->
+  <div class="menubar" role="presentation">
+    <div class="menubar__left">
+      <span class="menubar__apple" aria-hidden="true">
+        <svg viewBox="0 0 17 22" width="14" height="18" aria-hidden="true">
+          <path fill="currentColor" d="M14.6 11.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.7-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.4.9 1.3 1.9 2.6 3.3 2.6 1.3-.1 1.9-.9 3.5-.9 1.6 0 2.1.9 3.5.8 1.4 0 2.4-1.2 3.3-2.6 1-1.5 1.4-2.9 1.5-3-.1 0-2.8-1.1-2.8-4.1zM12 4.1c.7-.9 1.2-2.2 1.1-3.4-1.1.1-2.4.7-3.2 1.6-.7.8-1.3 2.1-1.1 3.3 1.2.1 2.5-.6 3.2-1.5z"/>
+        </svg>
+      </span>
+      <span class="menubar__brand">Sıla Barışık</span>
+      <span class="menubar__item" data-i18n="menu.file">Dosya</span>
+      <span class="menubar__item" data-i18n="menu.edit">Düzenle</span>
+      <span class="menubar__item" data-i18n="menu.view">Görünüm</span>
+    </div>
+    <div class="menubar__right">
+      <button class="menubar__lang" type="button" aria-label="Change language">TR</button>
+      <span class="menubar__time" id="menubar-time" aria-live="off">—</span>
+    </div>
+  </div>
+
+  <!-- Desktop -->
+  <main class="desktop" id="desktop">
+
+    <!-- Scattered desktop files (projects) -->
+    <div class="files" aria-label="Projects">
+
+      <button class="file" type="button" data-window="proj-1" style="--x: 22%; --y: 28%; --rot: -3deg;">
+        <span class="file__thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 48" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#cdb89a"/><stop offset="1" stop-color="#7a7468"/>
+            </linearGradient></defs>
+            <rect width="64" height="48" fill="url(#g1)"/>
+            <circle cx="14" cy="14" r="6" fill="#f6e7c2" opacity=".9"/>
+            <path d="M0 36 L18 24 L34 32 L52 18 L64 26 L64 48 L0 48 Z" fill="#3e3a32" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="file__label" data-i18n="proj.1.t">Düşük Çözünürlük</span>
+      </button>
+
+      <button class="file" type="button" data-window="proj-2" style="--x: 70%; --y: 22%; --rot: 2deg;">
+        <span class="file__thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 48" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g2" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#e6e1d8"/><stop offset="1" stop-color="#b6a896"/>
+            </linearGradient></defs>
+            <rect width="64" height="48" fill="url(#g2)"/>
+            <rect x="8" y="14" width="22" height="22" fill="#3a3a3a" opacity=".7"/>
+            <rect x="36" y="20" width="20" height="16" fill="#1f1f1f" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="file__label" data-i18n="proj.2.t">Notlar Arşivi</span>
+      </button>
+
+      <button class="file" type="button" data-window="proj-3" style="--x: 45%; --y: 56%; --rot: -1deg;">
+        <span class="file__thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 48" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g3" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#a8b9c4"/><stop offset="1" stop-color="#4d5a66"/>
+            </linearGradient></defs>
+            <rect width="64" height="48" fill="url(#g3)"/>
+            <path d="M0 30 Q20 22 32 28 T64 26 L64 48 L0 48 Z" fill="#2c343b" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="file__label" data-i18n="proj.3.t">Sessiz Su</span>
+      </button>
+
+      <button class="file" type="button" data-window="proj-4" style="--x: 18%; --y: 70%; --rot: 4deg;">
+        <span class="file__thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 48" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#7d9a6a"/><stop offset="1" stop-color="#3a4a2e"/>
+            </linearGradient></defs>
+            <rect width="64" height="48" fill="url(#g4)"/>
+            <path d="M10 36 L18 22 L24 28 L32 18 L40 30 L52 22 L60 34 L60 48 L0 48 Z" fill="#1f2818" opacity=".6"/>
+          </svg>
+        </span>
+        <span class="file__label" data-i18n="proj.4.t">Kıyı Çizgisi</span>
+      </button>
+
+      <button class="file" type="button" data-window="proj-5" style="--x: 78%; --y: 64%; --rot: -2deg;">
+        <span class="file__thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 48" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g5" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#bfb4a3"/><stop offset="1" stop-color="#7c6e58"/>
+            </linearGradient></defs>
+            <rect width="64" height="48" fill="url(#g5)"/>
+            <rect x="6" y="14" width="6" height="30" fill="#2a2520" opacity=".7"/>
+            <rect x="16" y="10" width="6" height="34" fill="#2a2520" opacity=".75"/>
+            <rect x="26" y="18" width="6" height="26" fill="#2a2520" opacity=".7"/>
+            <rect x="38" y="6"  width="6" height="38" fill="#2a2520" opacity=".75"/>
+            <rect x="48" y="14" width="6" height="30" fill="#2a2520" opacity=".7"/>
+          </svg>
+        </span>
+        <span class="file__label" data-i18n="proj.5.t">Şehir Eskizi</span>
+      </button>
+
+    </div>
+
+    <!-- Windows (rendered open/closed via JS) -->
+    <div class="windows" id="windows" aria-live="polite">
+
+      <!-- About window -->
+      <article class="win win--about" id="about" data-window-id="about" data-x="80" data-y="120" data-w="560" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="about.title">Hakkımda</div>
+        </header>
+        <div class="win__body win__body--about">
+          <h1 class="win__h1" data-i18n="about.h1">Hakkımda</h1>
+
+          <div class="card-row">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/me.png" alt="" />
             </div>
-            <div class="menu">
-                <ul>  
-                    <li><a href ="https://www.linkedin.com/in/slabarsk" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://twitter.com/Buubituzak" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/slabarsk/" target="_blank">Instagram</a></li>
-                </ul>
+            <dl class="kv">
+              <div><dt data-i18n="about.k.name">İsim</dt><dd>Sıla Barışık</dd></div>
+              <div><dt data-i18n="about.k.role">Rol</dt><dd data-i18n="about.v.role">Frontend &amp; AI</dd></div>
+              <div><dt data-i18n="about.k.loc">Konum</dt><dd>İzmir, TR</dd></div>
+              <div><dt data-i18n="about.k.mail">E-posta</dt>
+                <dd><button class="link" type="button" data-mail data-user="silabarisik" data-domain="gmail.com" data-i18n="about.v.mail">İletişime geç</button></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="prose">
+            <p data-i18n="about.p1">Tasarım odaklı çalışmayı seven bir frontend geliştiriciyim. Son dönemde yapay zekâ ve LLM'lerle arayüzlerin nasıl daha sezgisel olabileceği üzerine deneyler yapıyorum.</p>
+            <p data-i18n="about.p2">Detaylara takılırım; tamamlandığında kimsenin fark etmediği şeyleri severim. Tek başıma ya da küçük ekiplerde rahat çalışırım.</p>
+          </div>
+
+          <div class="chips" aria-label="Skills">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Python</span>
+            <span class="chip">LLM / Prompting</span>
+            <span class="chip">Git</span>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--primary" type="button" data-mail data-user="silabarisik" data-domain="gmail.com" data-i18n="about.btn.mail">E-posta gönder</button>
+            <button class="btn" type="button" data-cv data-user="silabarisik" data-domain="gmail.com" data-i18n="about.btn.cv">CV iste</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Notes window (Apple Notes style: sidebar + content) -->
+      <article class="win win--notes" id="notes" data-window-id="notes" data-x="220" data-y="80" data-w="760" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title">Notes</div>
+        </header>
+        <div class="win__body win__body--notes">
+          <aside class="notes__list" role="tablist">
+            <button class="notes__entry is-active" role="tab" type="button" data-note="exp" aria-selected="true">
+              <div class="notes__entry-title" data-i18n="notes.exp.t">Deneyim</div>
+              <div class="notes__entry-meta">
+                <span class="notes__date">22/01/2026</span>
+                <span class="notes__preview" data-i18n="notes.exp.p">Frontend & AI üzerine bağımsız çalışmalar…</span>
+              </div>
+            </button>
+            <button class="notes__entry" role="tab" type="button" data-note="edu" aria-selected="false">
+              <div class="notes__entry-title" data-i18n="notes.edu.t">Eğitim</div>
+              <div class="notes__entry-meta">
+                <span class="notes__date">22/01/2026</span>
+                <span class="notes__preview" data-i18n="notes.edu.p">Bilgisayar Mühendisliği lisans…</span>
+              </div>
+            </button>
+            <button class="notes__entry" role="tab" type="button" data-note="bio" aria-selected="false">
+              <div class="notes__entry-title" data-i18n="notes.bio.t">Hakkımda</div>
+              <div class="notes__entry-meta">
+                <span class="notes__date">22/01/2026</span>
+                <span class="notes__preview" data-i18n="notes.bio.p">Tasarım odaklı bir frontend…</span>
+              </div>
+            </button>
+          </aside>
+          <section class="notes__pane">
+            <div class="notes__content" data-note-pane="exp">
+              <div class="notes__stamp" data-i18n="notes.exp.stamp">22 Ocak 2026, 11:35</div>
+              <h2 data-i18n="notes.exp.h">Deneyim</h2>
+              <p data-i18n="notes.exp.b1">Şu sıra bağımsız olarak frontend ve yapay zekâ kesişiminde çalışıyorum. Küçük arayüz denemeleri, LLM destekli araçlar, kişisel projeler.</p>
+              <p data-i18n="notes.exp.b2">Tasarım tarafında Figma'da prototip kuruyor, kod tarafında modern web stack'i (React / Next.js / TypeScript) kullanıyorum.</p>
+              <p data-i18n="notes.exp.b3">— Daha detaylı liste yakında.</p>
             </div>
-        </nav>
-    </header>
-
-    <article>
-        <div class="article">
-            
-            
+            <div class="notes__content" data-note-pane="edu" hidden>
+              <div class="notes__stamp" data-i18n="notes.edu.stamp">22 Ocak 2026, 11:36</div>
+              <h2 data-i18n="notes.edu.h">Eğitim</h2>
+              <p data-i18n="notes.edu.b1">Bilgisayar Mühendisliği — lisans öğrenimim sürüyor.</p>
+              <p data-i18n="notes.edu.b2">Frontend, etkileşim tasarımı ve son dönemde NLP / LLM odaklı self-learning.</p>
+            </div>
+            <div class="notes__content" data-note-pane="bio" hidden>
+              <div class="notes__stamp" data-i18n="notes.bio.stamp">22 Ocak 2026, 11:40</div>
+              <h2 data-i18n="notes.bio.h">Hakkımda</h2>
+              <p data-i18n="notes.bio.b1">İzmir'de yaşıyorum. Tasarım odaklı çalışmayı seven bir frontend geliştiriciyim. Son dönemde AI tarafında deneyler yapıyorum.</p>
+              <p data-i18n="notes.bio.b2">Detaylara takılırım, tamamlandığında kimsenin fark etmediği şeyleri severim.</p>
+            </div>
+          </section>
         </div>
-    </article>
- 
-    <section class="container content">
-        <h1></h1>
+      </article>
 
-        <div class="links">
-            <a href="about.html">Learn more about me!</a>
-            <a href="#">CV</a>
+      <!-- Project windows -->
+      <article class="win win--proj" id="proj-1" data-window-id="proj-1" data-x="180" data-y="100" data-w="640" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="proj.1.t">Düşük Çözünürlük</div>
+        </header>
+        <div class="win__body win__body--proj">
+          <h1 class="win__h1" data-i18n="proj.1.t">Düşük Çözünürlük</h1>
+          <p class="proj__desc" data-i18n="proj.1.d">Bu alanda projenin kısa açıklaması yer alacak. Sıla bilgileri verince doldurulacak.</p>
+          <dl class="meta">
+            <div><dt data-i18n="proj.k.client">Müşteri</dt><dd data-i18n="proj.1.client">—</dd></div>
+            <div><dt data-i18n="proj.k.year">Yıl</dt><dd data-i18n="proj.1.year">2026</dd></div>
+            <div><dt data-i18n="proj.k.type">Tür</dt><dd data-i18n="proj.1.type">Frontend</dd></div>
+            <div><dt data-i18n="proj.k.role">Rol</dt><dd data-i18n="proj.1.role">Tasarım & geliştirme</dd></div>
+          </dl>
+          <div class="proj__media" aria-hidden="true">
+            <span data-i18n="proj.placeholder">görsel yakında</span>
+          </div>
         </div>
-    </section>
+      </article>
 
+      <article class="win win--proj" id="proj-2" data-window-id="proj-2" data-x="220" data-y="140" data-w="640" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="proj.2.t">Notlar Arşivi</div>
+        </header>
+        <div class="win__body win__body--proj">
+          <h1 class="win__h1" data-i18n="proj.2.t">Notlar Arşivi</h1>
+          <p class="proj__desc" data-i18n="proj.2.d">Bu alanda projenin kısa açıklaması yer alacak.</p>
+          <dl class="meta">
+            <div><dt data-i18n="proj.k.client">Müşteri</dt><dd data-i18n="proj.2.client">—</dd></div>
+            <div><dt data-i18n="proj.k.year">Yıl</dt><dd data-i18n="proj.2.year">2026</dd></div>
+            <div><dt data-i18n="proj.k.type">Tür</dt><dd data-i18n="proj.2.type">AI / araç</dd></div>
+            <div><dt data-i18n="proj.k.role">Rol</dt><dd data-i18n="proj.2.role">Solo</dd></div>
+          </dl>
+          <div class="proj__media" aria-hidden="true">
+            <span data-i18n="proj.placeholder">görsel yakında</span>
+          </div>
+        </div>
+      </article>
 
+      <article class="win win--proj" id="proj-3" data-window-id="proj-3" data-x="260" data-y="160" data-w="640" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="proj.3.t">Sessiz Su</div>
+        </header>
+        <div class="win__body win__body--proj">
+          <h1 class="win__h1" data-i18n="proj.3.t">Sessiz Su</h1>
+          <p class="proj__desc" data-i18n="proj.3.d">Bu alanda projenin kısa açıklaması yer alacak.</p>
+          <dl class="meta">
+            <div><dt data-i18n="proj.k.client">Müşteri</dt><dd data-i18n="proj.3.client">—</dd></div>
+            <div><dt data-i18n="proj.k.year">Yıl</dt><dd data-i18n="proj.3.year">2025</dd></div>
+            <div><dt data-i18n="proj.k.type">Tür</dt><dd data-i18n="proj.3.type">Konsept</dd></div>
+            <div><dt data-i18n="proj.k.role">Rol</dt><dd data-i18n="proj.3.role">Tasarım</dd></div>
+          </dl>
+          <div class="proj__media" aria-hidden="true">
+            <span data-i18n="proj.placeholder">görsel yakında</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="win win--proj" id="proj-4" data-window-id="proj-4" data-x="300" data-y="180" data-w="640" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="proj.4.t">Kıyı Çizgisi</div>
+        </header>
+        <div class="win__body win__body--proj">
+          <h1 class="win__h1" data-i18n="proj.4.t">Kıyı Çizgisi</h1>
+          <p class="proj__desc" data-i18n="proj.4.d">Bu alanda projenin kısa açıklaması yer alacak.</p>
+          <dl class="meta">
+            <div><dt data-i18n="proj.k.client">Müşteri</dt><dd data-i18n="proj.4.client">—</dd></div>
+            <div><dt data-i18n="proj.k.year">Yıl</dt><dd data-i18n="proj.4.year">2025</dd></div>
+            <div><dt data-i18n="proj.k.type">Tür</dt><dd data-i18n="proj.4.type">UI deneyi</dd></div>
+            <div><dt data-i18n="proj.k.role">Rol</dt><dd data-i18n="proj.4.role">Solo</dd></div>
+          </dl>
+          <div class="proj__media" aria-hidden="true">
+            <span data-i18n="proj.placeholder">görsel yakında</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="win win--proj" id="proj-5" data-window-id="proj-5" data-x="340" data-y="200" data-w="640" hidden>
+        <header class="win__bar">
+          <div class="traffic">
+            <button class="dot dot--red"    type="button" data-action="close"    aria-label="Close"></button>
+            <button class="dot dot--yellow" type="button" data-action="minimize" aria-label="Minimize"></button>
+            <button class="dot dot--green"  type="button" data-action="maximize" aria-label="Maximize"></button>
+          </div>
+          <div class="win__title" data-i18n="proj.5.t">Şehir Eskizi</div>
+        </header>
+        <div class="win__body win__body--proj">
+          <h1 class="win__h1" data-i18n="proj.5.t">Şehir Eskizi</h1>
+          <p class="proj__desc" data-i18n="proj.5.d">Bu alanda projenin kısa açıklaması yer alacak.</p>
+          <dl class="meta">
+            <div><dt data-i18n="proj.k.client">Müşteri</dt><dd data-i18n="proj.5.client">—</dd></div>
+            <div><dt data-i18n="proj.k.year">Yıl</dt><dd data-i18n="proj.5.year">2024</dd></div>
+            <div><dt data-i18n="proj.k.type">Tür</dt><dd data-i18n="proj.5.type">Kişisel</dd></div>
+            <div><dt data-i18n="proj.k.role">Rol</dt><dd data-i18n="proj.5.role">Solo</dd></div>
+          </dl>
+          <div class="proj__media" aria-hidden="true">
+            <span data-i18n="proj.placeholder">görsel yakında</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Dock -->
+    <nav class="dock" aria-label="Dock">
+      <span class="dock__inner">
+
+        <button class="dock__app" type="button" data-window="about" data-tip="Hakkımda" data-tip-en="About">
+          <span class="dock__icon dock__icon--memoji">
+            <img src="assets/emoji.png" alt="" />
+          </span>
+        </button>
+
+        <button class="dock__app" type="button" data-window="notes" data-tip="Notlar" data-tip-en="Notes">
+          <span class="dock__icon dock__icon--notes" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="notes-bg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#f3f3f3"/>
+                </linearGradient>
+                <linearGradient id="notes-top" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ffe17a"/>
+                  <stop offset="1" stop-color="#fcce4d"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#notes-bg)"/>
+              <path d="M0 16 H64 V0 H16 A16 16 0 0 0 0 16 Z" fill="url(#notes-top)"/>
+              <rect x="0" y="16" width="64" height="1" fill="rgba(0,0,0,0.08)"/>
+              <g stroke="#d6d4cc" stroke-width="1.4" stroke-linecap="round">
+                <line x1="12" y1="24" x2="52" y2="24"/>
+                <line x1="12" y1="32" x2="52" y2="32"/>
+                <line x1="12" y1="40" x2="52" y2="40"/>
+                <line x1="12" y1="48" x2="40" y2="48"/>
+              </g>
+            </svg>
+          </span>
+        </button>
+
+        <span class="dock__sep" aria-hidden="true"></span>
+
+        <a class="dock__app" href="https://www.linkedin.com/in/slabarsk/" target="_blank" rel="noopener noreferrer" data-tip="LinkedIn">
+          <span class="dock__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="li-bg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#1187d4"/>
+                  <stop offset="1" stop-color="#0a66c2"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#li-bg)"/>
+              <path fill="#fff" d="M19.5 26h6v22h-6zM22.5 16.4a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2zM30.5 26h5.7v3h.1c.8-1.5 2.8-3.1 5.7-3.1 6.1 0 7.2 4 7.2 9.2V48h-6V36.3c0-2.8-.1-6.4-3.9-6.4-3.9 0-4.5 3-4.5 6.2V48h-6V26z"/>
+            </svg>
+          </span>
+        </a>
+
+        <a class="dock__app" href="https://www.producthunt.com/@slabarsk" target="_blank" rel="noopener noreferrer" data-tip="Product Hunt">
+          <span class="dock__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="ph-bg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ff7a4d"/>
+                  <stop offset="1" stop-color="#da552f"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#ph-bg)"/>
+              <circle cx="32" cy="32" r="16" fill="#fff"/>
+              <path fill="#da552f" d="M28.5 23h6.6c3.6 0 6.4 2.6 6.4 6.1s-2.8 6.2-6.4 6.2H32V41h-3.5V23zm6.3 8.9c1.7 0 2.9-1.2 2.9-2.8 0-1.6-1.2-2.7-2.9-2.7H32v5.5h2.8z"/>
+            </svg>
+          </span>
+        </a>
+
+        <a class="dock__app" href="https://github.com/slabarsk" target="_blank" rel="noopener noreferrer" data-tip="GitHub">
+          <span class="dock__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="gh-bg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#2b2b2b"/>
+                  <stop offset="1" stop-color="#0d0d0d"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#gh-bg)"/>
+              <path fill="#fff" d="M32 14a18 18 0 0 0-5.7 35.1c.9.2 1.2-.4 1.2-.9v-3.2c-5 1.1-6.1-2.4-6.1-2.4-.8-2.1-2-2.7-2-2.7-1.6-1.1.1-1.1.1-1.1 1.8.1 2.8 1.9 2.8 1.9 1.6 2.8 4.3 2 5.4 1.5.2-1.2.6-2 1.2-2.5-4-.5-8.2-2-8.2-9 0-2 .7-3.6 1.9-4.9-.2-.5-.8-2.4.2-4.9 0 0 1.5-.5 5 1.9a17.3 17.3 0 0 1 9.1 0c3.5-2.4 5-1.9 5-1.9 1 2.5.4 4.4.2 4.9 1.2 1.3 1.9 2.9 1.9 4.9 0 7-4.3 8.5-8.3 9 .7.6 1.3 1.7 1.3 3.5v5.2c0 .5.3 1.1 1.2.9A18 18 0 0 0 32 14Z"/>
+            </svg>
+          </span>
+        </a>
+
+      </span>
+    </nav>
+
+  </main>
+
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
