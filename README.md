@@ -13,7 +13,7 @@ Tarayıcıda `http://127.0.0.1:4173` adresini açın.
 - `index.html`: İngilizce içerik, bölüm düzeni ve gerçek profil/belge bağlantıları.
 - `style.css`: renkler, tipografi, mobil düzen, azaltılmış hareket ve yazdırma stilleri.
 - `script.js`: Türkçe çeviriler, dil tercihi, mobil menü, proje önizlemesi ve iletişim.
-- `assets/portfolio/`: Referans Bubble sitesinden alınmış orijinal AVIF görseller ve proje sayfalarından alınmış JPEG ekran görüntüleri yerel olarak sunulur.
+- `assets/portfolio/`: Kullanıcının paylaştığı PNG portre, referans Bubble sitesinden alınmış AVIF görseller ve proje sayfalarından alınmış JPEG ekran görüntüleri yerel olarak sunulur.
 - `about.html`: Eski bağlantılar için `/#about` yönlendirmesi.
 
 İngilizce varsayılandır; ziyaretçinin TR/EN tercihi tarayıcıda saklanır. İngilizce bir metin değiştirildiğinde aynı `data-i18n` anahtarının Türkçe karşılığı da `script.js` içinde güncellenmelidir.
@@ -24,7 +24,7 @@ Tarayıcıda `http://127.0.0.1:4173` adresini açın.
 
 CV bilgileri, proje açıklamaları, görseller ve sertifika bağlantıları kullanıcının paylaştığı ekran görüntüleri ile [Bubble referans sayfasından](https://sla-bark-40683.bubbleapps.io/version-test) aktarılmıştır. İş deneyimi, son paylaşılan LinkedIn ekran görüntüsüne göre güncellenmiştir: Aicado / Growth (Ağustos 2024–günümüz), Kodsuz / Developer (Haziran 2023–Ağustos 2026); her ikisi de tam zamanlıdır. Gönüllülük tarihleri Bubble referansındaki biçimiyle korunmuştur. Görseller yereldir; sertifika PDF'leri mevcut Bubble CDN bağlantılarını kullanır. Inter yazı tipi yüklenemezse sistem yazı tipi kullanılır.
 
-Hırdavatçı AI kartının açıklaması ve ekran görüntüsü [Kodsuz proje sayfasından](https://kodsuz.ai/vitrin/hirdavatciai/) alınmıştır. Kart, bu sayfaya yeni sekmede açılan bir bağlantı içerir.
+Hırdavatçı AI kartının açıklaması ve ekran görüntüsü [Kodsuz proje sayfasından](https://kodsuz.ai/vitrin/hirdavatciai/) alınmıştır. Kodsuz kartı [güncel ana sayfanın](https://kodsuz.ai/) ekran görüntüsünü kullanır. Proje kartları yalnızca görsel önizlemesi açar; dış bağlantı içermez.
 
 ## Hızlı kontrol
 

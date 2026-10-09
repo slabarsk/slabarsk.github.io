@@ -89,7 +89,6 @@
   "projects.category6": "İŞ YÖNETİMİ",
   "projects.description6": "Hırdavat işletmeleri için satış, stok, sipariş, cari hesap ve katalog süreçlerini masaüstü ve mobilde bir araya getiren iş yönetimi yazılımı.",
   "projects.preview6": "Hırdavatçı AI önizlemesini büyüt",
-  "projects.visit6": "Projeyi incele",
   "volunteering.label": "EKRANIN ÖTESİNDE",
   "volunteering.title": "Birlikte fayda üretmek.",
   "volunteering.intro": "Bildiklerimi paylaşmak, başkalarından öğrenmek ve topluluklara katkı sunmak.",
