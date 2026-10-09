@@ -97,7 +97,6 @@ h1 { font-size: clamp(56px, 5.5vw, 78px); letter-spacing: -.055em; font-weight: 
 .section-intro h2 { font-size: 37px; }
 .entry-heading { display: flex; gap: 22px; align-items: flex-start; }
 .organization-logo { width: 48px; height: 48px; object-fit: contain; border-radius: 4px; flex: none; }
-.organization-monogram { display: grid; place-items: center; background: var(--sage); color: var(--green); font: 26px/1 var(--serif); }
 .experience-entry + .experience-entry { margin-top: 36px; padding-top: 36px; border-top: 1px solid var(--line); }
 .experience-entry > .tags { margin-top: 20px; }
 .entry-location { font-size: 11px; color: var(--muted); margin-top: 4px; }

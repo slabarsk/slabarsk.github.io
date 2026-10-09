@@ -22,7 +22,7 @@ Tarayıcıda `http://127.0.0.1:4173` adresini açın.
 
 ## İçerik kaynağı
 
-CV bilgileri, proje açıklamaları, görseller ve sertifika bağlantıları kullanıcının paylaştığı ekran görüntüleri ile [Bubble referans sayfasından](https://sla-bark-40683.bubbleapps.io/version-test) aktarılmıştır. İş deneyimi, son paylaşılan LinkedIn ekran görüntüsüne göre güncellenmiştir: Aicado / Growth (Ağustos 2024–günümüz), Kodsuz / Developer (Haziran 2023–Ağustos 2026); her ikisi de tam zamanlıdır. Gönüllülük tarihleri Bubble referansındaki biçimiyle korunmuştur. Görseller yereldir; sertifika PDF'leri mevcut Bubble CDN bağlantılarını kullanır. Inter yazı tipi yüklenemezse sistem yazı tipi kullanılır.
+CV bilgileri, proje açıklamaları, görseller ve sertifika bağlantıları kullanıcının paylaştığı ekran görüntüleri ile [Bubble referans sayfasından](https://sla-bark-40683.bubbleapps.io/version-test) aktarılmıştır. İş deneyimi, kullanıcının son düzeltmesine göre güncellenmiştir: Aicado / Growth (Ağustos 2024–Mayıs 2026), Kodsuz / Developer (Haziran 2023–günümüz); her ikisi de tam zamanlıdır. Aicado logosu kullanıcının paylaştığı PNG görseldir. Gönüllülük tarihleri Bubble referansındaki biçimiyle korunmuştur. Görseller yereldir; sertifika PDF'leri mevcut Bubble CDN bağlantılarını kullanır. Inter yazı tipi yüklenemezse sistem yazı tipi kullanılır.
 
 Hırdavatçı AI kartının açıklaması ve ekran görüntüsü [Kodsuz proje sayfasından](https://kodsuz.ai/vitrin/hirdavatciai/) alınmıştır. Kodsuz kartı [güncel ana sayfanın](https://kodsuz.ai/) ekran görüntüsünü kullanır. Proje kartları yalnızca görsel önizlemesi açar; dış bağlantı içermez.
 
